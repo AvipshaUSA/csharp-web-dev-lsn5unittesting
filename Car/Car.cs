@@ -1,4 +1,6 @@
-﻿namespace CarNS
+﻿
+
+namespace CarNS
 {
     public class Car
     {
@@ -38,6 +40,10 @@
             double gallonsUsed = milesAbleToTravel / MilesPerGallon;
             GasTankLevel -= gallonsUsed;
             Odometer += milesAbleToTravel;
+        }
+        public void AddGas(double gas)
+        {
+            GasTankLevel += gas;
         }
 
     }
